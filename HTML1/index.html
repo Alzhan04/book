@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+    content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website With Login & Registration Form |
+    Codehal</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<header class="header">
+    <div class="header-1">
+        <a href="#" class="logo"><i class="fas fa-book"> bookly</i></a>
+        <form action="" class="search-form">
+            <input type="search" name="" placeholder="осы жерден іздеңіз..." id="search-box" ">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+        <div class="icons">
+            <div id="search-btn" class="fas fa-search"></div>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <div id="login-btn" class="fas fa-user"></div>
+        </div>
+    </div>
+
+    <div class="header-2">
+        <nav class="navbar">
+            <a href="#home">басты бет</a>
+            <a href="#featured">Ұсынылған</a>
+            <a href="#arrivals">Жаңа кітаптар</a>
+            <a href="#reviews">Пікірлері</a>
+            <a href="#contact">Байланыс</a>
+        </nav>
+    </div>
+</header>
+ 
+<nav class="bottom-navbar">
+    <a href="#home" class="fas fa-home"></a>
+    <a href="#featured" class="fas fa-list"></a>
+    <a href="#arrivals" class="fas fa-tags"></a>
+    <a href="#reviews" class="fas fa-comments"></a>
+    <a href="#blogs" class="fas fa-blog"></a>
+</nav>
+
+<div class="login-form-container">
+
+    <div id="close-login-btn" class="fas fa-times"></div>
+    
+    
+
+    <form action="auth.php" method="post">
+        <h3>sign in</h3>
+        <span>username</span>
+        <input type="login" name="login" class="box" placeholder="enter your name" id="">
+        <span>password</span>
+        <input type="password" name="password" class="box" placeholder="enter your password" id="">
+        <div class="checkbox">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me"> remember me</label>
+        </div>
+        <button type="submit" class="btn">sign in</button>
+        <p>Don't have an account? <a href="#">sign up</a></p>
+    </form>
+
+
+    
+
+    <form action="check.php" method="post">
+        <h3>sign up</h3>
+        <span>username</span>
+        <input type="login" name="login" class="box" placeholder="enter your name" id="">
+        <span>password</span>
+        <input type="password" name="password" class="box" placeholder="enter your password" id="">
+        <div class="checkbox">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me"> remember me</label>
+        </div>
+        <button type="submit" class="btn">sign up</button>
+        <p>Already have an account? <a href="#">sign in</a></p>
+    </form>
+
+</div>
+
+<section class="home" id="home">
+
+<div class="row">
+    <div class="content">
+        <h3>75% дейін жеңілдік</h3>
+        <p>Кітап — заманалар толқынында тербеліп, үстіндегі қымбат қазынасын ұрпақтан-ұрпаққа жеткізіп келе жатқан ой кемесі.</p>
+        <a href="#" class="btn">қазір дүкенде</a>
+    </div>
+
+<div class="swiper books-slider">
+    <div class="swiper-wrapper">
+       <a href="#" class="swiper-slide"><img src="img/a1.png" alt=""></a>
+       <a href="#" class="swiper-slide"><img src="img/a2.png" alt=""></a>
+       <a href="#" class="swiper-slide"><img src="img/a3.png" alt=""></a>
+       <a href="#" class="swiper-slide"><img src="img/a4.png" alt=""></a>
+       <a href="#" class="swiper-slide"><img src="img/a5.png" alt=""></a>
+       <a href="#" class="swiper-slide"><img src="img/a6.png" alt=""></a>
+    </div>
+    <img src="img/ban1.png" class="stand" alt="">
+</div>
+
+</div>
+
+</section>
+
+<section class="icons-container">
+
+    <div class="icons">
+        <i class="fas fa-plane"></i>
+        <div class="content">
+        <h3>жылдам жеткізу</h3>
+        <p>100$ астам тапсырыс беріңіз</p>
+    </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-lock"></i>
+        <div class="content">
+        <h3>қауіпсіз төлем</h3>
+        <p>100 қауіпсіз төлем</p>
+    </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-redo-alt"></i>
+        <div class="content">
+        <h3>оңай қайтару</h3>
+        <p>10 күн қайтарылады</p>
+    </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-headset"></i>
+        <div class="content">
+        <h3>24/7 қолдау</h3>
+        <p>кез келген уақытта бізге қоңырау шалыңыз</p>
+    </div>
+    </div>
+
+</section>
+
+
+<section class="featured" id="featured">
+    <h1 class="heading"><span>Ұсынылған кітаптар</span></h1>
+    
+    <div class="swiper featured-slider">
+
+    <div class="swiper-wrapper" id="product-list">
+
+        <div class="swiper-slide box" >
+            <div class="icons">
+                <a href="#" class="fas fa-search"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="img/a1.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Ұсынылған кітаптар</h3>
+                <div class="price">$0 <span>$20.99</span></div>
+                <a href="https://drive.google.com/uc?export=download&id=1eMPjlazTiecJ_DnxZKFrgPIM-8Lw7PL-" class="btn">жүктеу</a>
+            </div>
+        </div>
+
+        <div class="swiper-slide box">
+            <div class="icons">
+                <a href="#" class="fas fa-search"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="img/a2.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Ұсынылған кітаптар</h3>
+                <div class="price">$0 <span>$20.99</span></div>
+                <a href="https://drive.google.com/uc?export=download&id=1ie8AgCDGlyzG0RgNFHhbpap6RYGnUlc-" class="btn">жүктеу</a>
+            </div>
+        </div>
+
+        <div class="swiper-slide box">
+            <div class="icons">
+                <a href="#" class="fas fa-search"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="img/a3.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Ұсынылған кітаптар</h3>
+                <div class="price">$0 <span>$20.99</span></div>
+                <a href="https://drive.google.com/uc?export=download&id=16zpRhqwjkbP_U49NX6Lp0oxwWqJPFEYh" class="btn">жүктеу</a>
+            </div>
+        </div>
+
+        <div class="swiper-slide box">
+            <div class="icons">
+                <a href="#" class="fas fa-search"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="img/a4.png" alt="">
+            </div> 
+            <div class="content">
+                <h3>Ұсынылған кітаптар</h3>
+                <div class="price">$0 <span>$20.99</span></div>
+                <a href="https://drive.google.com/uc?export=download&id=1WYsASNag8tfRKJ-MmvWPK8120rSvSsQp" class="btn">жүктеу</a>
+            </div>
+        </div>
+
+        <div class="swiper-slide box">
+            <div class="icons">
+                <a href="#" class="fas fa-search"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="img/a5.png" alt="">
+            </div> 
+            <div class="content">
+                <h3>Ұсынылған кітаптар</h3>
+                <div class="price">$0 <span>$20.99</span></div>
+                <a href="https://drive.google.com/uc?export=download&id=1YuAqLA9-Ls_I68rA0ZwAYgO64VbLYsBo" class="btn">жүктеу</a>
+            </div>
+        </div>
+
+        <div class="swiper-slide box">
+            <div class="icons">
+                <a href="#" class="fas fa-search"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="img/a6.png" alt="">
+            </div> 
+            <div class="content">
+                <h3>Ұсынылған кітаптар</h3>
+                <div class="price">$0 <span>$20.99</span></div>
+                <a href="https://drive.google.com/uc?export=download&id=125nnDrYEkMCV02RkLSt08DWP3b2G2u3e" class="btn">жүктеу</a>
+            </div>
+        </div>
+
+        <div class="swiper-slide box">
+            <div class="icons">
+                <a href="#" class="fas fa-search"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="img/a7.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Ұсынылған кітаптар</h3>
+                <div class="price">$0 <span>$20.99</span></div>
+                <a href="https://drive.google.com/uc?export=download&id=1EACG0tQwhd_DAkZ8w1RVhC1DnQJ9EKPM" class="btn">жүктеу</a>
+            </div>
+        </div>
+
+        <div class="swiper-slide box">
+            <div class="icons">
+                <a href="#" class="fas fa-search"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="img/a8.png" alt="">
+            </div> 
+            <div class="content">
+                <h3>Ұсынылған кітаптар</h3>
+                <div class="price">$0 <span>$20.99</span></div>
+                <a href="https://drive.google.com/uc?export=download&id=13hpuIcrqbZqwfIECytI3sYNlcswHrTYe" class="btn">жүктеу</a>
+            </div>
+        </div>
+
+        <div class="swiper-slide box">
+            <div class="icons">
+                <a href="#" class="fas fa-search"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="img/aa1.png" alt="">
+            </div> 
+            <div class="content">
+                <h3>Ұсынылған кітаптар</h3>
+                <div class="price">$0 <span>$20.99</span></div>
+                <a href="https://drive.google.com/uc?export=download&id=1-lPG4Jft_9_VdnQVdDvQQ9o5ERHq_FZv" class="btn">жүктеу</a>
+            </div>
+        </div>
+
+        <div class="swiper-slide box">
+            <div class="icons">
+                <a href="#" class="fas fa-search"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="img/aa2.png" alt="">
+            </div>
+            <div class="content"> 
+                <h3>Ұсынылған кітаптар</h3>
+                <div class="price">$0 <span>$20.99</span></div>
+                <a href="https://drive.google.com/uc?export=download&id=1zjcKLm2VAhhg0fVjuYYulZ3ORPDjcw5Z" class="btn">жүктеу</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+
+<section class="newsletter">
+
+    <form action="email.php" method="post">
+        <h3>соңғы жаңартуларға жазылыңыз</h3>
+        <input type="email" name="mail" placeholder="электрондық поштаңызды енгізіңіз" id="" class="box">
+        <input type="submit" value="жазылу" class="btn">
+    </form>
+
+</section>
+
+<section class="arrivals" id="arrivals">
+
+    <h1 class="heading"> <span>Жаңа кітаптар</span></h1>
+
+    <div class="swiper arrivals-slider">
+
+        <div class="swiper-wrapper">
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="img/aa3.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Жаңа Кітаптар</h3>
+                    <div class="price">$20.99 <span>$25.99</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="img/aa4.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Жаңа Кітаптар</h3>
+                    <div class="price">$20.99 <span>$25.99</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="img/aa5.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Жаңа Кітаптар</h3>
+                    <div class="price">$20.99 <span>$25.99</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="img/aa6.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Жаңа Кітаптар</h3>
+                    <div class="price">$20.99 <span>$25.99</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="img/aa7.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Жаңа Кітаптар</h3>
+                    <div class="price">$20.99 <span>$25.99</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="swiper arrivals-slider">
+
+        <div class="swiper-wrapper">
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="img/aa8.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Жаңа Кітаптар</h3>
+                    <div class="price">$20.99 <span>$25.99</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="img/aa9.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Жаңа Кітаптар</h3>
+                    <div class="price">$20.99 <span>$25.99</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="img/aa10.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Жаңа Кітаптар</h3>
+                    <div class="price">$20.99 <span>$25.99</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="img/aa11.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Жаңа Кітаптар</h3>
+                    <div class="price">$20.99 <span>$25.99</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="img/a3.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Жаңа Кітаптар</h3>
+                    <div class="price">$20.99 <span>$25.99</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="deal">
+    <div class="content">
+        <h3>Бүгінгі жеңілдік</h3>
+        <h1>50% дейін жеңілдік</h1>
+        <p>Білімнің қайнар бұлағы, сенің рухани қазынаңның қайнар бұлағы — кітап. Өз кітапханаңды құра біл. Кітапты бір оқып қанағат тұтпа, қайтадан оқы.</p>
+        <a href="#" class="btn">қазір дүкенде</a>
+    </div>
+
+    <div class="image">
+        <img src="img/deal-img.jpg" alt="">
+    </div>
+
+</section>
+
+<section class="reviews" id="reviews">
+
+    <h1 class="heading"> <span> клиенттің пікірлері </span></h1>
+
+    <div class="swiper reviews-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="https://media-hel3-1.cdn.whatsapp.net/v/t61.24694-24/403795003_331700292935416_8728664314461411839_n.jpg?ccb=11-4&oh=01_AdQsiMFV6Cj2fP68Rf4-9SlPBYu0IG0exxL65aGHu8AahQ&oe=657BBCD9&_nc_sid=e6ed6c&_nc_cat=104" alt="">
+                <h3>Ақбота</h3>
+                <p>Кітап тек қазақ әдебиеті шығармаларымен ғана шектелмейді. Осы кезеңге дейін қазақ тіліне аударылған шетел әдебиетінің де көрнекті туындылары оқырман назарына ұсынылып келеді.</p>
+                <div class="spars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="https://media-hel3-1.cdn.whatsapp.net/v/t61.24694-24/317706783_1254438328819938_5928318183571252018_n.jpg?ccb=11-4&oh=01_AdQj8Z5SRIf0i24a-6sBMN6skU988EfVjlcoT0g_o5t1sA&oe=657BC4F8&_nc_sid=e6ed6c&_nc_cat=105" alt="">
+                <h3>Арман</h3>
+                <p>Кітап тек қазақ әдебиеті шығармаларымен ғана шектелмейді. Осы кезеңге дейін қазақ тіліне аударылған шетел әдебиетінің де көрнекті туындылары оқырман назарына ұсынылып келеді.</p>
+                <div class="spars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="https://media-hel3-1.cdn.whatsapp.net/v/t61.24694-24/153659207_141676751726504_8206256032162415388_n.jpg?ccb=11-4&oh=01_AdTnXCDaDJaWBXGkUPP1Iqrnp4ljDw7zzJ3i1ZW1BPUrTw&oe=6579B8BA&_nc_sid=e6ed6c&_nc_cat=101" alt="">
+                <h3>Мадияр</h3>
+                <p>Кітап тек қазақ әдебиеті шығармаларымен ғана шектелмейді. Осы кезеңге дейін қазақ тіліне аударылған шетел әдебиетінің де көрнекті туындылары оқырман назарына ұсынылып келеді.</p>
+                <div class="spars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="https://media-hel3-1.cdn.whatsapp.net/v/t61.24694-24/373467450_987477249193486_1370216974631696303_n.jpg?ccb=11-4&oh=01_AdSYP5ImzTR3mbzH9QuDl316-TyldKuqs0y-ncu9WJNtRg&oe=657BB118&_nc_sid=e6ed6c&_nc_cat=108" alt="">
+                <h3>Асан</h3>
+                <p>Кітап тек қазақ әдебиеті шығармаларымен ғана шектелмейді. Осы кезеңге дейін қазақ тіліне аударылған шетел әдебиетінің де көрнекті туындылары оқырман назарына ұсынылып келеді.</p>
+                <div class="spars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="https://media-hel3-1.cdn.whatsapp.net/v/t61.24694-24/402357453_899008685171318_1498623241865911714_n.jpg?ccb=11-4&oh=01_AdSpB_-BCsgufB5rfbILrbrcCtjQz0JngIj67NFBJqfahg&oe=657BCEF3&_nc_sid=e6ed6c&_nc_cat=108" alt="">
+                <h3>Қосай</h3>
+                <p>Кітап тек қазақ әдебиеті шығармаларымен ғана шектелмейді. Осы кезеңге дейін қазақ тіліне аударылған шетел әдебиетінің де көрнекті туындылары оқырман назарына ұсынылып келеді.</p>
+                <div class="spars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="https://media-hel3-1.cdn.whatsapp.net/v/t61.24694-24/385578032_1451523305414141_6745643001237587860_n.jpg?ccb=11-4&oh=01_AdRLXpSi1OvSEq0zefuI8Rou7XUDs9OycxX2cmjBAvgiBw&oe=6579D90D&_nc_sid=e6ed6c&_nc_cat=111" alt="">
+                <h3>Думан</h3>
+                <p>Кітап тек қазақ әдебиеті шығармаларымен ғана шектелмейді. Осы кезеңге дейін қазақ тіліне аударылған шетел әдебиетінің де көрнекті туындылары оқырман назарына ұсынылып келеді.</p>
+                <div class="spars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>c
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"><span>біздің блогтарымыз</span></h1>
+
+    <div class="swiper blogs-slider">
+        
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="https://gagaru.club/uploads/posts/2023-02/thumbs/1675943542_gagaru-club-p-krasivie-biblioteki-mira-krasivo-44.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>блог тақырыбы осында</h3>
+                    <p>Рухында болашаққа ұмтылған жағдайда ғана кітап өміршең болмақ.</p>
+                    <a href="#" class="btn">ары қарай оқу</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="https://catherineasquithgallery.com/uploads/posts/2021-02/1613444825_64-p-fon-dlya-prezentatsii-pro-biblioteku-68.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>блог тақырыбы осында</h3>
+                    <p>Кітап — әлемдегі құпиялы ұлы ғажайыптардың бірі.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                    <a href="#" class="btn">ары қарай оқу</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="https://s3.amazonaws.com/holdenluntz.com/wp-content/uploads/20200625150703/massimo-listri_biblioteca-di-fermo-italy-1.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>блог тақырыбы осында</h3>
+                    <p>Кітаппен істес болу адаммен істес болуға әзірлейді.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                    <a href="#" class="btn">ары қарай оқу</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="https://a-static.besthdwallpaper.com/hogwarts-library-wallpaper-2160x1440-81797_40.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>блог тақырыбы осында</h3>
+                    <p>Өз бойымдағы барлық ең жақсы қасиеттерім үшін кітапқа қарыздармын.</p>
+                    <a href="#" class="btn">ары қарай оқу</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/1cf95f52703397.5608ebcf7280c.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>блог тақырыбы осында</h3>
+                    <p>Егер мен байысам, тек қана кітап сатып алар едім.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                    <a href="#" class="btn">ары қарай оқу</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="footer" id="contact">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>біздің орындар</h3>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Қазақстан</a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> США</a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Россия</a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Франция</a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Япония</a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Испания</a>
+        </div>
+
+        <div class="box">
+            <h3>жылдам сілтемелер</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Басты Бет</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Ұсынылған </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Жаңа кітаптар</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Пікірлері</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> блогтар</a>
+        </div>
+
+        <div class="box">
+            <h3>қосымша сілтемелер</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> ақпараттар</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> тапсырыс берілген заттар</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> құпиялылық саясаты</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> төлем тәсілі</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> біздің қызметтеріміз</a>
+        </div>
+
+        <div class="box">
+            <h3>байланыс ақпараты</h3>
+            <a href="#"> <i class="fas fa-phone"></i> +7708-155-25-15</a>
+            <a href="#"> <i class="fas fa-phone"></i> +7771-226-25-25</a>
+            <a href="#"> <i class="fas fa-envelope"></i> alzhanbaktibaev@gmail.com</a>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMJrsj2wpE2R9fQbqFIYMvFfgp9uQoKn7tvr8iEGleJL5QaxFK" alt="">
+        </div>
+
+    </div>
+
+    <div class="share">
+        <a href="https://www.youtube.com/" class="fab fa-youtube"></a>
+    </div>
+
+    <div class="credit"> жасаған <span>Бақтыбаев Әлжан</span> | барлық құқықтар сақталған! </div>
+
+</section>
+
+<div class="loader-container">
+    <img src="gif.gif" alt="">
+</div>
+
+<script>
+    var xmlStr='<?xml version="1.0" encoding="UTF-8"?><library><book><title>Книга 1</title><author>Автор 1</author></book><book><title>Книга 2</title><author>Автор 2</author></book><book><title>Книга 3</title><author>Автор 3</author></book></library>';
+    console.log(xmlStr);
+    var parser = new DOMParser();
+    xmlDoc = parser.parseFromString(xmlStr, "text/xml");
+    console.log(xmlDoc);
+    </script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
